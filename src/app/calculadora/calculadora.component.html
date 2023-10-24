@@ -1,0 +1,27 @@
+<div class="tituloDiv">
+  <h2 class="titulo">Calculadora</h2>
+</div>
+<div class="container">
+  <div class="calculadora-card">
+    <div>
+      <input type="text" class="inputResult" value="{{ displayValue }}" disabled />
+      <button class="btnNumber" (click)="addToDisplay('7')">7</button>
+      <button class="btnNumber" (click)="addToDisplay('8')">8</button>
+      <button class="btnNumber" (click)="addToDisplay('9')">9</button>
+      <button class="btnOperator" (click)="addToDisplay(' / ')">&divide;</button>
+      <button class="btnNumber" (click)="addToDisplay('4')">4</button>
+      <button class="btnNumber" (click)="addToDisplay('5')">5</button>
+      <button class="btnNumber" (click)="addToDisplay('6')">6</button>
+      <button class="btnOperator" (click)="addToDisplay(' * ')">&times;</button>
+      <button class="btnNumber" (click)="addToDisplay('1')">1</button>
+      <button class="btnNumber" (click)="addToDisplay('2')">2</button>
+      <button class="btnNumber" (click)="addToDisplay('3')">3</button>
+      <button class="btnOperator" (click)="addToDisplay(' - ')">&minus;</button>
+      <button class="btnNumber" (click)="addToDisplay('.')">.</button>
+      <button class="btnNumber" (click)="addToDisplay('0')">0</button>
+      <button class="btnNumber" (click)="clear()">C</button>
+      <button class="btnOperator" (click)="addToDisplay(' + ')">&plus;</button>
+      <button class="btnCalculate" (click)="calculate()">Calcular</button>
+    </div>
+  </div>
+</div>
